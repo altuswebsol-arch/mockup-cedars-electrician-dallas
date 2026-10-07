@@ -1,5 +1,7 @@
 # Cedars Electrician Dallas — Website Mockup Concept
 
+**Live demo:** https://altuswebsol-arch.github.io/mockup-cedars-electrician-dallas/
+
 A homepage redesign concept for **Cedars Electrician Dallas** in Dallas, USA — a electrician business.
 
 ## Design
