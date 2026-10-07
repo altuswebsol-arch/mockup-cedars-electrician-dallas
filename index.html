@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cedars 24 Hour Electrician | 24/7 Emergency Electrician in Dallas, TX</title>
+<meta name="description" content="Cedars 24 Hour Electrician — round-the-clock emergency electrical repairs in Dallas, TX. Panel upgrades, lighting, ceiling fans, rewiring and safety inspections. Call (469) 884-2689 any time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b10; --bg2:#101016; --panel:#14141c;
+  --amber:#ffb300; --amber2:#ffcf40; --amber-dim:rgba(255,179,0,.12);
+  --ink:#f7f5ef; --muted:#a7a39a; --line:rgba(255,179,0,.22);
+  --font-d:'Archivo Black',sans-serif; --font-b:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-b);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--font-d);font-weight:400;line-height:1.02;letter-spacing:.5px;text-transform:uppercase}
+.kicker{font-size:13px;font-weight:800;letter-spacing:5px;text-transform:uppercase;color:var(--amber)}
+.kicker::before{content:"⚡ "}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:15px;letter-spacing:1.5px;text-transform:uppercase;padding:18px 34px;border-radius:10px;transition:.25s;cursor:pointer;border:1px solid transparent}
+.btn-solid{background:linear-gradient(180deg,var(--amber2),var(--amber));color:#14100a;box-shadow:0 8px 30px rgba(255,179,0,.35)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:0 14px 44px rgba(255,179,0,.55)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:rgba(255,179,0,.05)}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber2)}
+section{padding:110px 0;position:relative}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+/* hazard stripe divider */
+.hazard{height:10px;background:repeating-linear-gradient(-45deg,var(--amber) 0 18px,#0b0b10 18px 36px)}
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(11,11,16,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-family:var(--font-d);font-size:22px;letter-spacing:1px;line-height:1.1}
+.logo .bolt{color:var(--amber)}
+.logo small{display:block;font-family:var(--font-b);font-weight:700;font-size:10px;letter-spacing:4px;color:var(--muted)}
+.nav-links{display:flex;gap:30px;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.nav-links a{color:var(--muted);transition:.2s}
+.nav-links a:hover{color:var(--amber)}
+.nav-call{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,var(--amber2),var(--amber));color:#14100a;font-weight:800;font-size:14px;letter-spacing:1px;padding:12px 22px;border-radius:10px;box-shadow:0 6px 24px rgba(255,179,0,.35);transition:.2s;white-space:nowrap}
+.nav-call:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(255,179,0,.55)}
+.nav-call .dot{width:9px;height:9px;border-radius:50%;background:#14100a;animation:blink 1.4s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+/* ---------- hero ---------- */
+.hero{min-height:100vh;display:flex;align-items:center;padding:150px 0 80px;background:
+  linear-gradient(100deg,rgba(11,11,16,.97) 20%,rgba(11,11,16,.72) 55%,rgba(11,11,16,.35) 100%),
+  url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat}
+.hero-inner{max-width:760px}
+.hero h1{font-size:clamp(58px,8.5vw,124px);margin:20px 0 10px;text-shadow:0 4px 40px rgba(0,0,0,.6)}
+.hero h1 .amber{color:var(--amber);text-shadow:0 0 60px rgba(255,179,0,.45)}
+.hero-sub{font-size:18px;color:#d8d4c9;max-width:560px;margin:22px 0 36px}
+.hero-sub b{color:var(--amber2)}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-trust{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px}
+.hero-trust span{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);background:rgba(11,11,16,.6);backdrop-filter:blur(6px);padding:10px 18px;border-radius:40px}
+.hero-trust span i{color:var(--amber);font-style:normal;margin-right:8px}
+/* 24/7 badge */
+.badge247{position:absolute;right:6%;bottom:12%;width:150px;height:150px;border-radius:50%;background:rgba(11,11,16,.75);backdrop-filter:blur(8px);border:2px solid var(--amber);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(255,179,0,.4);animation:pulse 2.4s infinite}
+.badge247 b{font-family:var(--font-d);font-size:34px;color:var(--amber)}
+.badge247 small{font-size:10px;font-weight:800;letter-spacing:3px;color:var(--ink)}
+@keyframes pulse{0%,100%{box-shadow:0 0 50px rgba(255,179,0,.4)}50%{box-shadow:0 0 90px rgba(255,179,0,.7)}}
+/* ---------- ticker ---------- */
+.ticker{background:linear-gradient(180deg,var(--amber2),var(--amber));color:#14100a;overflow:hidden;padding:15px 0}
+.ticker-track{display:flex;white-space:nowrap;animation:tick 28s linear infinite;font-family:var(--font-d);font-size:22px;letter-spacing:2px}
+.ticker-track span{padding:0 26px}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* ---------- services ---------- */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:54px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(42px,5vw,70px)}
+.sec-head h2 em{font-style:normal;color:var(--amber)}
+.sec-head p{color:var(--muted);max-width:440px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:.3s;position:relative}
+.svc:hover{transform:translateY(-8px);border-color:var(--amber);box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 40px rgba(255,179,0,.15)}
+.svc .ph{height:230px;overflow:hidden;position:relative}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:.6s;filter:saturate(1.05) contrast(1.05)}
+.svc:hover .ph img{transform:scale(1.07)}
+.svc .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,11,16,.75))}
+.svc .num{position:absolute;top:16px;left:18px;z-index:2;font-family:var(--font-d);font-size:15px;color:#14100a;background:var(--amber);border-radius:8px;padding:6px 12px;letter-spacing:1px}
+.svc .body{padding:28px 26px 30px}
+.svc h3{font-size:22px;margin-bottom:10px}
+.svc p{font-size:14.5px;color:var(--muted)}
+.svc .go{display:inline-block;margin-top:16px;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--amber)}
+.svc.tile{display:flex;flex-direction:column;justify-content:center;padding:38px 30px;min-height:392px;background:
+  radial-gradient(600px 300px at 80% -10%,rgba(255,179,0,.16),transparent 60%),var(--panel)}
+.svc.tile .big{font-family:var(--font-d);font-size:74px;color:transparent;-webkit-text-stroke:2px var(--amber);line-height:1}
+.svc.tile h3{font-size:26px;margin:18px 0 10px}
+/* ---------- how it works ---------- */
+.steps{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:40px 32px;position:relative;transition:.25s}
+.step:hover{border-color:var(--amber);transform:translateY(-6px)}
+.step .n{font-family:var(--font-d);font-size:56px;color:var(--amber);text-shadow:0 0 30px rgba(255,179,0,.4)}
+.step h3{font-size:22px;margin:16px 0 10px}
+.step p{color:var(--muted);font-size:15px}
+.step .call-big{display:inline-block;margin-top:14px;font-weight:800;color:var(--amber);font-size:18px;letter-spacing:1px}
+/* ---------- areas ---------- */
+.areas{text-align:center}
+.area-pills{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:40px}
+.area-pills span{font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:1px solid var(--line);border-radius:40px;padding:13px 28px;color:var(--muted);transition:.2s;background:var(--panel)}
+.area-pills span:hover{border-color:var(--amber);color:var(--amber);box-shadow:0 0 24px rgba(255,179,0,.25)}
+/* ---------- why band ---------- */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-grid .frame{position:relative}
+.why-grid .frame img{border-radius:20px;border:1px solid var(--line);height:480px;width:100%;object-fit:cover}
+.why-grid .frame::before{content:"";position:absolute;inset:-14px;border:1px solid var(--line);border-radius:28px;pointer-events:none}
+.why-list{list-style:none;margin-top:30px;display:grid;gap:20px}
+.why-list li{display:flex;gap:16px;align-items:flex-start;font-size:16px;color:var(--muted)}
+.why-list li b{color:var(--ink)}
+.why-list .z{color:var(--amber);font-size:22px;line-height:1.4;font-weight:800}
+/* ---------- CTA band ---------- */
+.cta-band{background:
+  linear-gradient(180deg,rgba(11,11,16,.82),rgba(11,11,16,.9)),
+  url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+  text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cta-band h2{font-size:clamp(48px,7vw,104px)}
+.cta-band h2 .amber{color:var(--amber);text-shadow:0 0 60px rgba(255,179,0,.5)}
+.phone-big{display:inline-block;margin:30px 0;font-family:var(--font-d);font-size:clamp(38px,5.5vw,72px);letter-spacing:2px;color:var(--amber);text-shadow:0 0 44px rgba(255,179,0,.45);transition:.2s}
+.phone-big:hover{color:var(--amber2);transform:scale(1.03)}
+.cta-band p{color:#d8d4c9;max-width:580px;margin:0 auto 32px}
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.c-info h2{font-size:clamp(42px,5vw,66px);margin-bottom:18px}
+.c-line{display:flex;gap:16px;align-items:center;margin:24px 0;font-size:17px}
+.c-line .z{color:var(--amber);font-size:20px;font-weight:800}
+.c-line a:hover{color:var(--amber)}
+.c-line small{display:block;color:var(--muted);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.hours-note{margin-top:26px;border:1px dashed var(--line);border-radius:12px;padding:18px 22px;font-size:14.5px;color:var(--muted)}
+.hours-note b{color:var(--amber)}
+form{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:40px;display:grid;gap:18px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:grid;gap:8px}
+input,select,textarea{background:#0d0d13;border:1px solid var(--line);border-radius:10px;color:var(--ink);font-family:var(--font-b);font-size:15px;padding:15px 16px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(255,179,0,.18)}
+textarea{min-height:120px;resize:vertical}
+select option{background:#14141c}
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:44px 0;background:#08080c}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:13px;letter-spacing:1px;color:var(--muted)}
+.badge{border:1px solid var(--amber);color:var(--amber);border-radius:40px;padding:10px 24px;font-size:12px;font-weight:700;letter-spacing:2px;transition:.2s;display:inline-block}
+.badge:hover{background:var(--amber);color:#14100a}
+/* ---------- mobile call bar ---------- */
+.mcall{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:linear-gradient(180deg,var(--amber2),var(--amber));color:#14100a;font-weight:800;font-size:17px;letter-spacing:1px;text-align:center;padding:16px}
+@media(max-width:900px){
+  .nav-links{display:none}
+  .hero{background:linear-gradient(180deg,rgba(11,11,16,.9),rgba(11,11,16,.65)),url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat}
+  .badge247{width:110px;height:110px;right:5%;bottom:8%}
+  .badge247 b{font-size:26px}
+  .svc-grid,.steps-grid,.contact-grid,.why-grid{grid-template-columns:1fr}
+  .why-grid .frame img{height:320px}
+  .svc.tile{min-height:0}
+  section{padding:70px 0}
+  body{padding-bottom:60px}
+  .mcall{display:block}
+}
+@media(max-width:560px){
+  .f-row{grid-template-columns:1fr}
+  .hero{padding:130px 0 60px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="bolt">⚡</span> CEDARS <span class="bolt">24 HOUR</span> ELECTRICIAN<small>DALLAS · TEXAS</small></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a><a href="#how">How It Works</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-call" href="tel:+14698842689"><span class="dot"></span>(469) 884-2689</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner rv in">
+    <p class="kicker">24/7 Emergency Electrician — Dallas, TX</p>
+    <h1>Dallas Power,<br><span class="amber">Restored in Hours.</span></h1>
+    <p class="hero-sub">Outage at midnight? Breaker keeps tripping? <b>Cedars 24 Hour Electrician</b> answers around the clock — residential and commercial electrical help across Dallas, Texas, whenever you need it.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-solid" href="tel:+14698842689">⚡ Call (469) 884-2689</a>
+      <a class="btn btn-ghost" href="#contact">Request Service →</a>
+    </div>
+    <div class="hero-trust">
+      <span><i>⚡</i>24-Hour Emergency Call-Outs</span>
+      <span><i>⚡</i>Serving Dallas, TX</span>
+      <span><i>⚡</i>Residential &amp; Commercial</span>
+    </div>
+  </div>
+  <div class="badge247 rv in"><b>24/7</b><small>ALWAYS ON</small></div>
+</section>
+
+<div class="hazard"></div>
+<div class="ticker"><div class="ticker-track">
+  <span>24-HOUR EMERGENCY SERVICE ⚡</span><span>DALLAS, TEXAS ⚡</span><span>PANEL UPGRADES ⚡</span><span>LIGHTING INSTALLATION ⚡</span><span>CEILING FANS ⚡</span><span>REWIRING ⚡</span><span>SAFETY INSPECTIONS ⚡</span>
+  <span>24-HOUR EMERGENCY SERVICE ⚡</span><span>DALLAS, TEXAS ⚡</span><span>PANEL UPGRADES ⚡</span><span>LIGHTING INSTALLATION ⚡</span><span>CEILING FANS ⚡</span><span>REWIRING ⚡</span><span>SAFETY INSPECTIONS ⚡</span>
+</div></div>
+<div class="hazard"></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="kicker">What We Handle</p><h2>ELECTRICAL, <em>ANY HOUR</em></h2></div>
+      <p>From midnight outages to full panel upgrades, we specialize in keeping Dallas homes and businesses powered and safe.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv" onclick="location.href='#contact'">
+        <div class="num">01</div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=900&auto=format&fit=crop" alt="Electrician working on an electrical panel"></div>
+        <div class="body"><h3>Emergency Electrical Repairs</h3><p>Power out, sparking outlets, burning smells — call any time, day or night, and get help fast.</p><span class="go">Get help now →</span></div>
+      </div>
+      <div class="svc tile rv">
+        <div class="big">02</div>
+        <h3>Panel Upgrades</h3><p>Old fuse box or maxed-out breaker panel? We upgrade panels to handle modern loads safely.</p><a class="go" href="#contact">Request service →</a>
+      </div>
+      <div class="svc rv" onclick="location.href='#contact'">
+        <div class="num">03</div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=900&auto=format&fit=crop" alt="Glowing light bulb installed in a dark room"></div>
+        <div class="body"><h3>Lighting Installation</h3><p>Indoor, outdoor and accent lighting — installed cleanly, wired correctly, built to last.</p><span class="go">Get help now →</span></div>
+      </div>
+      <div class="svc tile rv">
+        <div class="big">04</div>
+        <h3>Ceiling Fans</h3><p>New installs and replacements, balanced and wired right so they run quiet for years.</p><a class="go" href="#contact">Request service →</a>
+      </div>
+      <div class="svc rv" onclick="location.href='#contact'">
+        <div class="num">05</div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=900&auto=format&fit=crop" alt="Warm lamp glowing in a home interior"></div>
+        <div class="body"><h3>Rewiring</h3><p>Aging or damaged wiring replaced to modern standards — safer circuits, fewer surprises.</p><span class="go">Get help now →</span></div>
+      </div>
+      <div class="svc rv" onclick="location.href='#contact'">
+        <div class="num">06</div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=900&auto=format&fit=crop" alt="Electrical wiring diagnostics with testing equipment"></div>
+        <div class="body"><h3>Troubleshooting &amp; Safety Inspections</h3><p>Mystery outages, tripping breakers and full safety checks that find problems early.</p><span class="go">Get help now →</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="steps">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="kicker">How It Works</p><h2>POWER BACK IN <em>3 STEPS</em></h2></div>
+      <p>No phone trees, no waiting for business hours. When your power is out, every minute counts.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step rv"><div class="n">01</div><h3>Call Any Time</h3><p>Reach us day or night — a real electrician picks up, not a machine.</p><a class="call-big" href="tel:+14698842689">(469) 884-2689</a></div>
+      <div class="step rv"><div class="n">02</div><h3>We Roll Out</h3><p>Tell us what's wrong and where you are in Dallas. We head your way.</p></div>
+      <div class="step rv"><div class="n">03</div><h3>Power Restored</h3><p>We fix it, test it and make sure everything runs safe before we leave.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas" class="areas">
+  <div class="wrap rv">
+    <p class="kicker">Service Areas</p>
+    <h2 style="font-size:clamp(42px,5vw,68px);margin:14px 0">PROUDLY SERVING <span style="color:var(--amber)">DALLAS</span></h2>
+    <p style="color:var(--muted)">Around-the-clock coverage across the city and surrounding neighborhoods.</p>
+    <div class="area-pills">
+      <span>Downtown Dallas</span><span>Oak Lawn</span><span>Bishop Arts</span><span>Deep Ellum</span><span>Uptown</span><span>Lakewood</span><span>Highland Park</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap why-grid">
+    <div class="frame rv"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop" alt="Modern Dallas home interior with warm lighting"></div>
+    <div class="rv">
+      <p class="kicker">Why Cedars</p>
+      <h2 style="font-size:clamp(42px,5vw,66px);margin:14px 0">ONE CALL. <span style="color:var(--amber)">ANY HOUR.</span></h2>
+      <p style="color:var(--muted)">Electrical trouble doesn't keep business hours — so neither do we. Here's what you can expect when you call.</p>
+      <ul class="why-list">
+        <li><span class="z">⚡</span><span><b>We answer around the clock</b> — nights, weekends and holidays included.</span></li>
+        <li><span class="z">⚡</span><span><b>Homes and businesses</b> — from apartments to commercial spaces.</span></li>
+        <li><span class="z">⚡</span><span><b>Straightforward service</b> — we explain the problem and the fix in plain language.</span></li>
+        <li><span class="z">⚡</span><span><b>Safety first, always</b> — every job tested before we call it done.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap rv">
+    <p class="kicker">Emergency? Don't wait for morning.</p>
+    <h2>POWER <span class="amber">PROBLEMS?</span></h2>
+    <div><a class="phone-big" href="tel:+14698842689">(469) 884-2689</a></div>
+    <p>One call gets a 24-hour electrician on the line. Serving Dallas, Texas — residential and commercial.</p>
+    <a class="btn btn-solid" href="#contact">Request Service →</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="c-info rv">
+      <p class="kicker">Get In Touch</p>
+      <h2>TALK TO AN <span style="color:var(--amber)">ELECTRICIAN</span></h2>
+      <p style="color:var(--muted)">Tell us what's going on — we'll get back to you fast, or just call for immediate help.</p>
+      <div class="c-line"><span class="z">⚡</span><div><small>Phone — 24/7</small><a href="tel:+14698842689">(469) 884-2689</a></div></div>
+      <div class="c-line"><span class="z">⚡</span><div><small>Address</small>1705 Botham Jean Blvd, Dallas, TX 75215</div></div>
+      <div class="c-line"><span class="z">⚡</span><div><small>Serving</small>Dallas, Texas — residential &amp; commercial</div></div>
+      <div class="hours-note"><b>Emergency?</b> Skip the form — call <a href="tel:+14698842689" style="color:var(--amber);font-weight:800">(469) 884-2689</a> now. We answer around the clock.</div>
+    </div>
+    <form class="rv" onsubmit="return false">
+      <div class="f-row">
+        <label>Your name<input type="text" name="name" placeholder="Full name" required></label>
+        <label>Phone<input type="tel" name="phone" placeholder="(469) 555-0100" required></label>
+      </div>
+      <div class="f-row">
+        <label>Service needed
+          <select name="service">
+            <option>Emergency electrical repair</option><option>Panel upgrade</option>
+            <option>Lighting installation</option><option>Ceiling fan</option>
+            <option>Rewiring</option><option>Troubleshooting / safety inspection</option>
+          </select>
+        </label>
+        <label>How urgent?
+          <select name="urgency">
+            <option>Emergency — power is out</option><option>Urgent — same day</option>
+            <option>Soon — this week</option><option>Flexible</option>
+          </select>
+        </label>
+      </div>
+      <label>Describe the issue<textarea name="message" placeholder="What's happening, and where in Dallas are you?"></textarea></label>
+      <button class="btn btn-solid" type="submit" style="justify-content:center">⚡ Request Service →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Cedars 24 Hour Electrician — Dallas, TX</span>
+    <a class="badge" href="https://altuswebsolutions.com" target="_blank" rel="noopener">⚡ Concept by Altus Web Solutions ⚡</a>
+    <span><a href="tel:+14698842689">(469) 884-2689</a> · 1705 Botham Jean Blvd, Dallas, TX 75215</span>
+  </div>
+</footer>
+
+<a class="mcall" href="tel:+14698842689">⚡ Tap to Call (469) 884-2689</a>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
